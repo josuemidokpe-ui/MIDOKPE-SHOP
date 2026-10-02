@@ -1,0 +1,319 @@
+body {
+    background-color: #ffffff;
+    color: #111111;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+header {
+    background-color: #111111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 18px;
+    color: #555555;
+}
+.produits {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+.produit {
+    width: 280px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.produit img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.produit h3 {
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+.prix {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.produit button {
+    background-color: #111111;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.produit button:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   PANIER
+   ========================= */
+
+#liste-panier {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+#liste-panier > div {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+#liste-panier h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#liste-panier p {
+    margin: 8px 0;
+}
+
+#liste-panier button {
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#liste-panier .moins,
+#liste-panier .plus {
+    background: #eeeeee;
+    font-size: 16px;
+}
+
+#liste-panier .quantite {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+#liste-panier .supprimer {
+    background: #dc3545;
+    color: white;
+}
+
+#total-panier {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0;
+}
+
+/* Bouton WhatsApp */
+
+#commander-whatsapp {
+    display: block;
+    margin: 20px auto;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #25D366;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   ADAPTATION TÉLÉPHONE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    #liste-panier {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #liste-panier > div {
+        padding: 15px;
+    }
+
+    #liste-panier h3 {
+        font-size: 18px;
+    }
+
+    #liste-panier .moins,
+    #liste-panier .plus {
+        padding: 7px 10px;
+    }
+
+    #liste-panier .supprimer {
+        display: block;
+        margin: 12px auto 0;
+    }
+
+    #total-panier {
+        font-size: 21px;
+    }
+
+    #commander-whatsapp {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   BLOC D'ACCUEIL
+   ========================= */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    background: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero-description {
+    font-size: 16px !important;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.bouton-hero {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.bouton-hero:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   CARTES PRODUITS
+   ========================= */
+
+.produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.produit {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.produit img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.produit h3 {
+    margin: 15px 0 8px;
+}
+
+.produit .description {
+    font-size: 14px;
+}
+
+.produit .tailles {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.produit .prix {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.produit .ajouter-panier {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produit .ajouter-panier:hover {
+    opacity: 0.8;
+}
