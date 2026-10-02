@@ -1,125 +1,231 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>MIDOKPE SHOP</title>
 </head>
 
 <body>
 
     <header>
+
         <h1>MIDOKPE SHOP</h1>
 
         <nav>
             <a href="#">Accueil</a>
-            <a href="#">Chaussures</a>
-            <a href="#">Montres</a>
-            <a href="#">Autres articles</a>
-            <a href="#">Contact</a>
-            <a href="panier.html" id="panier">🛒 Panier (<span id="compteur">0</span>)</a>
+            <a href="#chaussures">Chaussures</a>
+            <a href="#montres">Montres</a>
+            <a href="#autres">Autres articles</a>
+            <a href="#contact">Contact</a>
+
+            <a href="panier.html" id="panier">
+                🛒 Panier (<span id="compteur">0</span>)
+            </a>
         </nav>
+
     </header>
+
 
     <main>
 
+        <!-- ========================= -->
+        <!-- ACCUEIL -->
+        <!-- ========================= -->
+
         <section class="hero">
 
-    <h2>Bienvenue chez MIDOKPE SHOP 👋</h2>
+            <h2>Bienvenue chez MIDOKPE SHOP 👋</h2>
 
-    <p>
-        Chaussures, montres et accessoires de qualité
-    </p>
+            <p>
+                Chaussures, montres et accessoires de qualité
+            </p>
 
-    <p class="hero-description">
-        Découvrez nos produits et commandez facilement
-        directement sur WhatsApp.
-    </p>
+            <p class="hero-description">
+                Découvrez nos produits et commandez facilement
+                directement sur WhatsApp.
+            </p>
 
-    <a href="#produits" class="bouton-hero">
-        🛍️ Voir nos produits
-    </a>
+            <a href="#produits" class="bouton-hero">
+                🛍️ Voir nos produits
+            </a>
 
-</section>
-        <section class="produits" id="produits">
+        </section>
 
-    <div class="produit">
 
-        <img src="./images/basket 1.png" alt="Baskets montantes">
+        <!-- ========================= -->
+        <!-- CHAUSSURES -->
+        <!-- ========================= -->
 
-        <h3>Baskets montantes</h3>
+        <section class="produits" id="chaussures">
 
-        <p class="description">
-            Baskets modernes et confortables.
-        </p>
+            <h2>CHAUSSURES</h2>
 
-        <p class="tailles">
-        Tailles : 40 · 42 · 43 · 44
-    </p>
 
-    <p class="couleurs">
-        Couleurs : Blanc · Noire · Cendre
-    </p>
+            <div class="produit">
 
-        <p class="prix">18 000 FCFA</p>
+                <img src="./images/basket 1.png" alt="Baskets montantes">
 
-        <button class="ajouter-panier" data-nom="Baskets montantes" data-prix="18000">
-    Ajouter au panier
-</button>
+                <h3>Baskets montantes</h3>
 
-    </div>
+                <p class="description">
+                    Baskets modernes et confortables.
+                </p>
 
-    <div class="produit">
+                <p class="tailles">
+                    Tailles : 40 · 42 · 43 · 44
+                </p>
 
-    <img src="images/basket 2.png" alt="Chaussure classique">
+                <p class="couleurs">
+                    Couleurs : Blanc · Noire · Cendre
+                </p>
 
-    <h3>Chaussure classique</h3>
+                <p class="prix">
+                    18 000 FCFA
+                </p>
 
-    <p class="description">
-        Chaussure élégante et confortable pour vos sorties.
-    </p>
+                <button
+                    class="ajouter-panier"
+                    data-nom="Baskets montantes"
+                    data-prix="18000">
 
-    <p class="tailles">
-        Tailles : 40 · 42 · 43 · 44
-    </p>
+                    Ajouter au panier
 
-    <p class="couleurs">
-        Couleurs : Bleue · Noire · Rouge
-    </p>
+                </button>
 
-    <p class="prix">16 000 FCFA</p>
+            </div>
 
-    <button class="ajouter-panier" data-nom="Chaussure classique" data-prix="16000">
-    Ajouter au panier
-</button>
 
-</div>
-<div class="produit">
+            <div class="produit">
 
-    <img src="images/montre.png" alt="montres + bracelets + coffret">
+                <img src="./images/basket 2.png" alt="Chaussure classique">
 
-    <h3>montres + bracelets + coffret</h3>
+                <h3>Chaussure classique</h3>
 
-    <p class="description">
-        Ensemble de 4 montres et bracelets de couples, grand cadran de luxe.
-    </p>
+                <p class="description">
+                    Chaussure élégante et confortable pour vos sorties.
+                </p>
 
-    <p class="couleurs">
-        Couleurs : Bleue dorée · Bleue argentée · Or · Argent
-    </p>
+                <p class="tailles">
+                    Tailles : 40 · 42 · 43 · 44
+                </p>
 
-    <p class="prix">16 000 FCFA</p>
+                <p class="couleurs">
+                    Couleurs : Bleue · Noire · Rouge
+                </p>
 
-    <button class="ajouter-panier" data-nom="montres + bracelets + coffret" data-prix="16000">
-    Ajouter au panier
-</button>
+                <p class="prix">
+                    16 000 FCFA
+                </p>
 
-</section>
+                <button
+                    class="ajouter-panier"
+                    data-nom="Chaussure classique"
+                    data-prix="16000">
+
+                    Ajouter au panier
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- MONTRES -->
+        <!-- ========================= -->
+
+        <section class="produits" id="montres">
+
+            <h2>MONTRES</h2>
+
+
+            <div class="produit">
+
+                <img
+                    src="./images/montre.png"
+                    alt="Montres bracelets et coffret">
+
+                <h3>
+                    Montres + bracelets + coffret
+                </h3>
+
+                <p class="description">
+                    Ensemble de 4 montres et bracelets de couples,
+                    grand cadran de luxe.
+                </p>
+
+                <p class="couleurs">
+                    Couleurs : Bleue dorée · Bleue argentée · Or · Argent
+                </p>
+
+                <p class="prix">
+                    16 000 FCFA
+                </p>
+
+                <button
+                    class="ajouter-panier"
+                    data-nom="Montres + bracelets + coffret"
+                    data-prix="16000">
+
+                    Ajouter au panier
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- AUTRES ARTICLES -->
+        <!-- ========================= -->
+
+        <section class="produits" id="autres">
+
+            <h2>AUTRES ARTICLES</h2>
+
+            <p>
+                Découvrez prochainement nos autres articles.
+            </p>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- CONTACT -->
+        <!-- ========================= -->
+
+        <section id="contact">
+
+            <h2>CONTACT</h2>
+
+            <p>
+                Pour toute information ou commande,
+                contactez-nous directement sur WhatsApp.
+            </p>
+
+            <a
+                href="https://wa.me/22953510458"
+                target="_blank">
+
+                💬 Contacter MIDOKPE SHOP sur WhatsApp
+
+            </a>
+
+        </section>
+
 
     </main>
+
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
